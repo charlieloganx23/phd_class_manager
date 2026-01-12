@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Classes from './pages/Classes';
 import Teachers from './pages/Teachers';
 import Notifications from './pages/Notifications';
+import ProfessorArea from './pages/ProfessorArea';
 
 function App() {
   return (
@@ -42,6 +43,14 @@ function App() {
             element={
               <PrivateRoute requiredRole="admin">
                 <Notifications />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/professor"
+            element={
+              <PrivateRoute requiredRole="professor">
+                <ProfessorArea />
               </PrivateRoute>
             }
           />

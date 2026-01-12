@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { dashboardService } from '../services';
 import Layout from '../components/Layout';
@@ -16,12 +17,18 @@ interface DashboardStats {
 
 export default function Dashboard() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Redirecionar professor para sua área
+    if (user?.role === 'professor') {
+      navigate('/professor');
+      return;
+    }
     loadStats();
-  }, []);
+  }, [user, navigate]);
 
   const loadStats = async () => {
     try {
