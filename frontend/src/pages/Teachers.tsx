@@ -47,8 +47,8 @@ export default function Teachers() {
 
         {/* Teachers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {professores.map((professor) => (
-            <div key={professor.id} className="card hover:shadow-lg transition-shadow">
+          {professores.map((professor, index) => (
+            <div key={`prof-${professor.id}-${index}`} className="card hover:shadow-lg transition-shadow">
               <div className="flex items-center mb-4">
                 <div 
                   className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"

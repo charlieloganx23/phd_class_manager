@@ -128,8 +128,8 @@ export default function Dashboard() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">📅 Próximas Aulas</h2>
           {stats?.proximasAulas && stats.proximasAulas.length > 0 ? (
             <div className="space-y-3">
-              {stats.proximasAulas.map((aula) => (
-                <div key={aula.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              {stats.proximasAulas.map((aula, index) => (
+                <div key={`aula-${aula.id}-${index}`} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <div className="flex-1">
                     <h3 className="font-medium text-gray-900">{aula.disciplina}</h3>
                     <p className="text-sm text-gray-600">

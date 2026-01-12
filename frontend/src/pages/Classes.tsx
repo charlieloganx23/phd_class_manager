@@ -128,8 +128,8 @@ export default function Classes() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {filteredAulas.map((aula) => (
-                  <tr key={aula.id} className="hover:bg-gray-50 transition-colors">
+                {filteredAulas.map((aula, index) => (
+                  <tr key={`aula-${aula.id}-${index}`} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm font-medium text-gray-900">{aula.disciplina}</div>
                       <div className="text-sm text-gray-500">{aula.dia_semana}</div>

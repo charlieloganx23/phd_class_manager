@@ -168,8 +168,8 @@ export default function ProfessorArea() {
           <div className="card">
             <h2 className="text-xl font-bold text-gray-900 mb-4">📅 Aulas de Hoje</h2>
             <div className="space-y-3">
-              {aulasHoje.map((aula) => (
-                <div key={aula.id} className="flex items-center justify-between p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+              {aulasHoje.map((aula, index) => (
+                <div key={`hoje-${aula.id}-${index}`} className="flex items-center justify-between p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
                   <div className="flex-1">
                     <h3 className="font-medium text-gray-900">{aula.disciplina}</h3>
                     <p className="text-sm text-gray-600">
@@ -238,8 +238,8 @@ export default function ProfessorArea() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {aulasProximas.map((aula) => (
-                  <tr key={aula.id} className="hover:bg-gray-50">
+                {aulasProximas.map((aula, index) => (
+                  <tr key={`prox-${aula.id}-${index}`} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       {aula.disciplina}
                     </td>

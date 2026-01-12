@@ -124,9 +124,9 @@ export default function Notifications() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">Histórico de Notificações</h2>
           <div className="space-y-3">
             {notificacoes.length > 0 ? (
-              notificacoes.map((notif) => (
+              notificacoes.map((notif, index) => (
                 <div 
-                  key={notif.id} 
+                  key={`notif-${notif.id}-${index}`} 
                   className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   <div className="flex justify-between items-start">
