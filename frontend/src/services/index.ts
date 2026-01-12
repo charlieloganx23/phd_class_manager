@@ -26,6 +26,21 @@ export const turmasService = {
     const response = await api.get(`/turmas/${id}/alunos`);
     return response.data;
   },
+
+  async create(data: any) {
+    const response = await api.post('/turmas', data);
+    return response.data;
+  },
+
+  async update(id: number, data: any) {
+    const response = await api.put(`/turmas/${id}`, data);
+    return response.data;
+  },
+
+  async delete(id: number) {
+    const response = await api.delete(`/turmas/${id}`);
+    return response.data;
+  },
 };
 
 export const aulasService = {
@@ -67,6 +82,60 @@ export const professoresService = {
   },
 };
 
+export const alunosService = {
+  async getAll(params?: any) {
+    const response = await api.get('/alunos', { params });
+    return response.data;
+  },
+
+  async getById(id: number) {
+    const response = await api.get(`/alunos/${id}`);
+    return response.data;
+  },
+
+  async create(data: any) {
+    const response = await api.post('/alunos', data);
+    return response.data;
+  },
+
+  async update(id: number, data: any) {
+    const response = await api.put(`/alunos/${id}`, data);
+    return response.data;
+  },
+
+  async delete(id: number) {
+    const response = await api.delete(`/alunos/${id}`);
+    return response.data;
+  },
+};
+
+export const substituicoesService = {
+  async getAll(params?: any) {
+    const response = await api.get('/substituicoes', { params });
+    return response.data;
+  },
+
+  async getById(id: number) {
+    const response = await api.get(`/substituicoes/${id}`);
+    return response.data;
+  },
+
+  async create(data: any) {
+    const response = await api.post('/substituicoes', data);
+    return response.data;
+  },
+
+  async updateStatus(id: number, status: string, observacoes?: string) {
+    const response = await api.patch(`/substituicoes/${id}/status`, { status, observacoes });
+    return response.data;
+  },
+
+  async delete(id: number) {
+    const response = await api.delete(`/substituicoes/${id}`);
+    return response.data;
+  },
+};
+
 export const notificacoesService = {
   async getAll(params?: any) {
     const response = await api.get('/notificacoes', { params });
@@ -92,5 +161,6 @@ export const notificacoesService = {
 // Aliases for convenience
 export const classService = aulasService;
 export const teacherService = professoresService;
+export const studentService = alunosService;
+export const substitutionService = substituicoesService;
 export const notificationService = notificacoesService;
-

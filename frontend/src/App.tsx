@@ -5,6 +5,9 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Classes from './pages/Classes';
 import Teachers from './pages/Teachers';
+import Groups from './pages/Groups';
+import Students from './pages/Students';
+import Substitutions from './pages/Substitutions';
 import Notifications from './pages/Notifications';
 import ProfessorArea from './pages/ProfessorArea';
 
@@ -35,6 +38,30 @@ function App() {
             element={
               <PrivateRoute requiredRole="admin">
                 <Teachers />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/turmas"
+            element={
+              <PrivateRoute requiredRole="admin">
+                <Groups />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/alunos"
+            element={
+              <PrivateRoute requiredRole="admin">
+                <Students />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/substituicoes"
+            element={
+              <PrivateRoute requiredRole="admin">
+                <Substitutions />
               </PrivateRoute>
             }
           />

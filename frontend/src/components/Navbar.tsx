@@ -47,6 +47,24 @@ export default function Navbar() {
                     Professores
                   </Link>
                   <Link
+                    to="/turmas"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent"
+                  >
+                    Turmas
+                  </Link>
+                  <Link
+                    to="/alunos"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent"
+                  >
+                    Alunos
+                  </Link>
+                  <Link
+                    to="/substituicoes"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent"
+                  >
+                    Substituições
+                  </Link>
+                  <Link
                     to="/notificacoes"
                     className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900 hover:border-gray-300 border-b-2 border-transparent"
                   >

@@ -7,6 +7,8 @@ import aulasRoutes from './routes/aulas.js';
 import professoresRoutes from './routes/professores.js';
 import notificacoesRoutes from './routes/notificacoes.js';
 import dashboardRoutes from './routes/dashboard.js';
+import alunosRoutes from './routes/alunos.js';
+import substituicoesRoutes from './routes/substituicoes.js';
 
 dotenv.config();
 
@@ -38,6 +40,8 @@ app.get('/', (req, res) => {
       turmas: '/api/turmas',
       aulas: '/api/aulas',
       professores: '/api/professores',
+      alunos: '/api/alunos',
+      substituicoes: '/api/substituicoes',
       notificacoes: '/api/notificacoes',
       dashboard: '/api/dashboard'
     }
@@ -48,6 +52,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/turmas', turmasRoutes);
 app.use('/api/aulas', aulasRoutes);
 app.use('/api/professores', professoresRoutes);
+app.use('/api/alunos', alunosRoutes);
+app.use('/api/substituicoes', substituicoesRoutes);
 app.use('/api/notificacoes', notificacoesRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
