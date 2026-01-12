@@ -73,14 +73,18 @@ export default function Teachers() {
                 <div>
                   <p className="text-xs font-medium text-gray-500 mb-1">Disciplinas:</p>
                   <div className="flex flex-wrap gap-1">
-                    {professor.disciplinas.map((disc, idx) => (
-                      <span 
-                        key={idx}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs"
-                      >
-                        {disc}
-                      </span>
-                    ))}
+                    {professor.disciplinas && professor.disciplinas.length > 0 ? (
+                      professor.disciplinas.map((disc, idx) => (
+                        <span 
+                          key={idx}
+                          className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs"
+                        >
+                          {disc}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="text-xs text-gray-500">Nenhuma disciplina cadastrada</span>
+                    )}
                   </div>
                 </div>
               </div>
