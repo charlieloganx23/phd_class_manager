@@ -170,9 +170,11 @@ export default function Groups() {
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">{turma.nome}</h3>
-                  <span className={`inline-block mt-2 px-3 py-1 rounded-full text-xs font-medium ${getTurnoColor(turma.turno)}`}>
-                    {turma.turno.charAt(0).toUpperCase() + turma.turno.slice(1)}
-                  </span>
+                  {turma.turno && (
+                    <span className={`inline-block mt-2 px-3 py-1 rounded-full text-xs font-medium ${getTurnoColor(turma.turno)}`}>
+                      {turma.turno.charAt(0).toUpperCase() + turma.turno.slice(1)}
+                    </span>
+                  )}
                 </div>
                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${turma.ativa ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
                   {turma.ativa ? 'Ativa' : 'Inativa'}
