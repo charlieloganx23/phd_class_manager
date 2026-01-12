@@ -1,0 +1,55 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
+import PrivateRoute from './components/PrivateRoute';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import Classes from './pages/Classes';
+import Teachers from './pages/Teachers';
+import Notifications from './pages/Notifications';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/aulas"
+            element={
+              <PrivateRoute>
+                <Classes />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/professores"
+            element={
+              <PrivateRoute requiredRole="admin">
+                <Teachers />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/notificacoes"
+            element={
+              <PrivateRoute requiredRole="admin">
+                <Notifications />
+              </PrivateRoute>
+            }
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
+  );
+}
+
+export default App;
