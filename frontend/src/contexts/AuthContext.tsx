@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { authService, User } from '../services/auth.service';
+import { authService, type User } from '../services';
 
 interface AuthContextData {
   user: User | null;
@@ -24,10 +24,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = async (email: string, password: string) => {
-    const response = await authService.login({ email, password });
-    setUser(response.user);
-    localStorage.setItem('token', response.token);
-    localStorage.setItem('user', JSON.stringify(response.user));
+    try {
+      console.log('Tentando login com:', email);
+      const response = await authService.login({ email, password });
+      console.log('Resposta do login:', response);
+      setUser(response.user);
+      localStorage.setItem('token', response.token);
+      localStorage.setItem('user', JSON.stringify(response.user));
+    } catch (error) {
+      console.error('Erro no AuthContext.login:', error);
+      throw error;
+    }
   };
 
   const logout = () => {

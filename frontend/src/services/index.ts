@@ -1,5 +1,9 @@
 import api from './api';
 
+// Re-export auth types
+export type { User, LoginData, LoginResponse } from './auth.service';
+export { authService } from './auth.service';
+
 export const dashboardService = {
   async getStats() {
     const response = await api.get('/dashboard');
@@ -78,4 +82,15 @@ export const notificacoesService = {
     const response = await api.post(`/notificacoes/${id}/enviar`);
     return response.data;
   },
+
+  async send(data: any) {
+    const response = await api.post('/notificacoes/enviar', data);
+    return response.data;
+  },
 };
+
+// Aliases for convenience
+export const classService = aulasService;
+export const teacherService = professoresService;
+export const notificationService = notificacoesService;
+

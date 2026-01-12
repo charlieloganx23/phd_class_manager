@@ -19,7 +19,9 @@ export default function Login() {
       await login(email, password);
       navigate('/');
     } catch (err: any) {
-      setError(err.response?.data?.error || 'Erro ao fazer login');
+      console.error('Erro completo:', err);
+      const errorMessage = err.response?.data?.error || err.message || 'Erro ao fazer login. Verifique se o backend está rodando.';
+      setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
