@@ -19,7 +19,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Edson",
       "email": "inf@phd.com",
       "password": "123456",
@@ -28,7 +28,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 4,
       "name": "Danilo",
       "email": "rlm@phd.com",
       "password": "123456",
@@ -37,7 +37,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 5,
       "name": "Edirlei",
       "email": "lege@phd.com",
       "password": "123456",
@@ -46,7 +46,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 6,
       "name": "Rúlian",
       "email": "legr@phd.com",
       "password": "123456",
@@ -55,7 +55,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 7,
       "name": "Airton",
       "email": "lega@phd.com",
       "password": "123456",
@@ -64,7 +64,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 8,
       "name": "Everton",
       "email": "hgro@phd.com",
       "password": "123456",
@@ -73,7 +73,7 @@
       "is_active": true
     },
     {
-      "id": 2,
+      "id": 9,
       "name": "Airton",
       "email": "espa@phd.com",
       "password": "123456",
@@ -85,14 +85,14 @@
   "professores": [
     {
       "id": 1,
-      "user_id": 2,
+      "user_id": 1,
       "disciplina": "Português",
       "legenda": "PORT",
       "cor_hex": "#2E7D32",
       "total_aulas": 4
     },
     {
-      "id": 1,
+      "id": 2,
       "user_id": 2,
       "disciplina": "Informática",
       "legenda": "INF",
@@ -100,48 +100,48 @@
       "total_aulas": 2
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 3,
+      "user_id": 3,
       "disciplina": "RLM",
       "legenda": "RLM",
       "cor_hex": "#4A235A",
       "total_aulas": 2
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 4,
+      "user_id": 4,
       "disciplina": "Legislação",
       "legenda": "LEG E",
       "cor_hex": "#5D4037",
       "total_aulas": 2
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 5,
+      "user_id": 5,
       "disciplina": "Legislação",
       "legenda": "LEG R",
       "cor_hex": "#117A65",
       "total_aulas": 2
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 6,
+      "user_id": 6,
       "disciplina": "Legislação",
       "legenda": "LEG A",
       "cor_hex": "#1565C0",
       "total_aulas": 2
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 7,
+      "user_id": 7,
       "disciplina": "História Geografia",
       "legenda": "HGRO",
       "cor_hex": "#7B1E3A",
       "total_aulas": 3
     },
     {
-      "id": 1,
-      "user_id": 2,
+      "id": 8,
+      "user_id": 8,
       "disciplina": "Específico",
       "legenda": "ESP A",
       "cor_hex": "#1F3A5F",
@@ -158,7 +158,7 @@
       "created_at": "2026-01-12T17:08:31.647Z"
     },
     {
-      "id": 1,
+      "id": 2,
       "nome": "TURBINADO ALE-RO NOITE",
       "periodo": "Noite",
       "ano": 2026,
@@ -183,7 +183,7 @@
       "created_at": "2026-01-12T17:08:31.649Z"
     },
     {
-      "id": 1,
+      "id": 2,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -197,7 +197,7 @@
       "created_at": "2026-01-12T17:08:31.649Z"
     },
     {
-      "id": 1,
+      "id": 3,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -211,7 +211,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 4,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -225,7 +225,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 5,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -239,7 +239,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 6,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -253,7 +253,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 7,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -267,7 +267,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 8,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -281,7 +281,7 @@
       "created_at": "2026-01-12T17:08:31.650Z"
     },
     {
-      "id": 1,
+      "id": 9,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -295,7 +295,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 10,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -309,7 +309,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 11,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -323,7 +323,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 12,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -337,7 +337,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 13,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -351,7 +351,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 14,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -365,7 +365,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 15,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -379,7 +379,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 16,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -393,7 +393,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 17,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -407,7 +407,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 18,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -421,7 +421,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 19,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -435,7 +435,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 20,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -449,7 +449,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 21,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -463,7 +463,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 22,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -477,7 +477,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 23,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -491,7 +491,7 @@
       "created_at": "2026-01-12T17:08:31.651Z"
     },
     {
-      "id": 1,
+      "id": 24,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -505,7 +505,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 25,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -519,7 +519,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 26,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -533,7 +533,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 27,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -547,7 +547,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 28,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -561,7 +561,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 29,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -575,7 +575,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 30,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -589,7 +589,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 31,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -603,7 +603,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 32,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -617,7 +617,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 33,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -631,7 +631,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 34,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -645,7 +645,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 35,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -659,7 +659,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 36,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -673,7 +673,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 37,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -687,7 +687,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 38,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -701,7 +701,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 39,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -715,7 +715,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 40,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -729,7 +729,7 @@
       "created_at": "2026-01-12T17:08:31.652Z"
     },
     {
-      "id": 1,
+      "id": 41,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -743,7 +743,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 42,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -757,7 +757,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 43,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -771,7 +771,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 44,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -785,7 +785,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 45,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -799,7 +799,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 46,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -813,7 +813,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 47,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -827,7 +827,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 48,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -841,7 +841,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 49,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -855,7 +855,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 50,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -869,7 +869,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 51,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -883,7 +883,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 52,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -897,7 +897,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 53,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -911,7 +911,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 54,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -925,7 +925,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 55,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -939,7 +939,7 @@
       "created_at": "2026-01-12T17:08:31.653Z"
     },
     {
-      "id": 1,
+      "id": 56,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -953,7 +953,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 57,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -967,7 +967,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 58,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -981,7 +981,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 59,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -995,7 +995,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 60,
       "turma_id": 1,
       "professor_id": 1,
       "disciplina": "Português",
@@ -1009,7 +1009,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 61,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",
@@ -1023,7 +1023,7 @@
       "created_at": "2026-01-12T17:08:31.654Z"
     },
     {
-      "id": 1,
+      "id": 62,
       "turma_id": 1,
       "professor_id": null,
       "disciplina": "Não definida",

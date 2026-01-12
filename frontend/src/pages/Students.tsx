@@ -152,8 +152,8 @@ export default function Students() {
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
             >
               <option value="">Todas as Turmas</option>
-              {turmas.map((turma) => (
-                <option key={turma.id} value={turma.id}>
+              {turmas.map((turma, index) => (
+                <option key={`filter-turma-${turma.id}-${index}`} value={turma.id}>
                   {turma.nome}
                 </option>
               ))}
@@ -291,8 +291,8 @@ export default function Students() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
                   >
                     <option value="">Selecione...</option>
-                    {turmas.map((turma) => (
-                      <option key={turma.id} value={turma.id}>
+                    {turmas.map((turma, index) => (
+                      <option key={`modal-turma-${turma.id}-${index}`} value={turma.id}>
                         {turma.nome}
                       </option>
                     ))}

@@ -165,8 +165,8 @@ export default function Groups() {
 
         {/* Grid de Turmas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {turmas.map((turma) => (
-            <div key={turma.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+          {turmas.map((turma, index) => (
+            <div key={`turma-${turma.id}-${index}`} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">{turma.nome}</h3>
